@@ -9,8 +9,9 @@ export const Container = styled.div`
 
     h1 {
         font-size: 22px;
-        color: #000;
+        color: #E02041;
         font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
     }
 `;
 
@@ -37,5 +38,26 @@ export const SubmitButton = styled.button`
 
     svg {
         color: #fff;
+    }
+`;
+
+export const List = styled.ul`
+    margin-top: 30px;
+    list-style: none;
+    
+    li {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & + li {
+            border-top: 1px solid #ddd;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #E02041;
     }
 `;
